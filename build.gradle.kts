@@ -20,10 +20,19 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-web")
+
+    // kotlin
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    // logging for kotlin
+    implementation("io.github.microutils:kotlin-logging:1.12.5")
+
+    // mysql
     runtimeOnly("com.mysql:mysql-connector-j")
+    // apache commons
+    implementation("org.apache.commons:commons-lang3")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
